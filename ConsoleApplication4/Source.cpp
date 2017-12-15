@@ -10,6 +10,7 @@ using namespace std;
 char u;
 void main()
 {
+
 	setlocale(LC_ALL, "Russian");
 
 start:
@@ -108,11 +109,11 @@ start:
 
 		if (sr >= 4)
 		{
-			cout << "студент получает доступ"<<sr << endl;
+			cout << "студент получает доступ" << sr << endl;
 		}
 		else
 		{
-			cout << "Допуска нет." <<sr<< endl;
+			cout << "Допуска нет." << sr << endl;
 		}
 
 		cout << "Хотите продолжить y/n:";
@@ -136,7 +137,7 @@ start:
 		cin >> b;
 		cout << "выберите действие: umnogenie -1, delenie-2, slogenie-3,vichitanie-4 :";
 		cin >> x;
-		
+
 		switch (x)
 		{
 		case 1:
@@ -181,7 +182,7 @@ start:
 		cin >> x;
 		hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 		SetConsoleTextAttribute(hConsole, x);
-		cout << x <<"\t"<< "Привет" << endl;
+		cout << x << "\t" << "Привет" << endl;
 
 
 		cout << "Хотите продолжить y/n:";
@@ -227,7 +228,7 @@ start:
 
 	case 7:
 	{
-		int x, x1, x2, x3, p, p1, p2, p3,p11,p22,p33, s;
+		int x, x1, x2, x3, p, p1, p2, p3, p11, p22, p33, s;
 		float s1;
 		cout << "введите кол-во человек в 1-й маршрутке:";
 		cin >> x1;
@@ -257,11 +258,11 @@ start:
 				p3 = x3 - x;
 				cout << "Пересадить из 3 маршрутки:" << p3 << "человек" << endl;
 			}
-			 if (x1 < x)
+			if (x1 < x)
 			{
 				p11 = x - x1;
 				cout << "посадить в 1-ю маршрутку:" << p11 << "человек" << endl;
-				
+
 
 			}
 			if (x2 < x)
@@ -274,12 +275,12 @@ start:
 				p33 = x - x3;
 				cout << "посадить во 2-ю маршрутку:" << p33 << "человек" << endl;
 			}
-		
-			 if ((x1 == x) || (x2 == x) || (x3 == x))
+
+			if ((x1 == x) || (x2 == x) || (x3 == x))
 			{
 				cout << "Оставить без изменений" << endl;
 			}
-						
+
 		}
 		else
 		{
